@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footcap</title>
+
+    <!-- ========== Google Fonts ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- ========== Font Awesome ========== -->
+    <link rel="stylesheet" href="assets/CSS/all.min.css">
+
+    <!-- ========== Bootstrap CSS ========== -->
+    <link rel="stylesheet" href="assets/CSS/bootstrap.min.css">
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+
+    <!-- ========== Normalize CSS ========== -->
+    <link rel="stylesheet" href="assets/CSS/normalize.css">
+
+    <!-- ========== Main CSS ========== -->
+    <link rel="stylesheet" href="assets/CSS/main.css">
+
+</head>
+<body>
+
+    <!-- ========== Start Navbar ========== -->
+    <header class="header bg-white position-fixed top-0 start-0 w-100 z-3">
+        <div class="container d-flex align-items-center justify-content-between">
+            <div class="overlay position-fixed top-0 start-0 w-100 h-100"></div>
+            <div class="logo">
+                <img src="assets/Imgs/logo.svg" alt="logo-img" width="160" height="50">
+            </div>
+            <div class="menu-icon d-flex d-lg-none align-items-center justify-content-center main-bg text-white">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <nav class="navbar">
+                <div class="logo def-flex position-relative">
+                    <img src="assets/Imgs/logo.svg" alt="logo-img" width="160" height="50">
+                    <div class="close position-absolute">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+                <div class="nav-items">
+                    <ul class="list-unstyled d-flex m-0">
+                        <li class="me-4 active" data-section="home">Home</li>
+                        <li class="me-4" data-section="products">Products</li>
+                        <li class="me-4" data-section="special">Special</li>
+                        <li class="me-4" data-section="blog">Blog</li>
+                        <li class="me-4" data-section="">About</li>
+                    </ul>
+                </div>
+                <div class="nav-icons">
+                    <ul class="list-unstyled d-flex m-0">
+                        <li class="me-0 me-lg-3 d-none d-lg-flex align-items-center justify-content-center"><i class="fa-solid fa-magnifying-glass"></i></li>
+                        <li class="d-flex align-items-center me-0 me-lg-3">
+                            <i class="fa-regular fa-user"></i>
+                            <div class="d-block d-lg-none">Login / Register</div>
+                        </li>
+                        <li class="d-flex align-items-center me-0 me-lg-3">
+                            <i class="fa-regular fa-heart"></i>
+                            <div class="d-flex d-lg-none justify-content-between">
+                                Wishlist
+                                <span class="def-flex main-bg text-white fw-medium">5</span>
+                            </div>
+                        </li>
+                        <li class="d-flex align-items-center">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <div class="d-flex d-lg-none justify-content-between">
+                                <div>Basket:<span>$318</span></div>
+                                <span class="def-flex main-bg text-white fw-medium">4</span>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="cart-menu position-fixed top-0 h-100 z-3">
+                    <div class="close position-absolute top-0 end-0 p-4">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                    <h2 class="position-absolute start-50 second-font fw-semibold">My Cart</h2>
+                    
+                    <div class="products"></div>
+                </div>
+
+            </nav>
+
+        </div>
+
+    </header>
+    <!-- ========== End Navbar ========== -->
+
+    <!-- ========== Start Landing ========== -->
+    <section class="landing d-flex align-items-center justify-content-start" id="home" data-section="home">
+        <div class="container">
+            <div class="main-content">
+                <h3 class="second-font d-flex flex-column row-gap-2 m-0">
+                    New Summer
+                    <strong>Shoes Collection</strong>
+                </h3>
+                <p class="mt-3 mb-4">
+                    Competently expedite alternative benefits whereas leading-edge catalysts for change.
+                    Globally leverage existing an expanded array of leadership.
+                </p>
+                <button class="second-font border border-0 main-bg text-white d-flex align-items-center">
+                    Shop Now
+                    <i class="fa-solid fa-arrow-right ms-2"></i>
+                </button>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Landing ========== -->
+
+    <!-- ========== Start Collections ========== -->
+    <section class="collections">
+        <div class="custome-container">
+            <div class="collection-types">
+                <div class="collection-card text-center d-flex flex-column align-items-center justify-content-between">
+                    <h4 class="second-font">MEN COLLECTIONS</h4>
+                    <button class="d-flex align-items-center border border-dark">
+                        Explore More
+                        <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </button>
+                </div>
+                <div class="collection-card  text-center d-flex flex-column align-items-center justify-content-between">
+                    <h4 class="second-font">WOMEN COLLECTIONS</h4>
+                    <button class="d-flex align-items-center border border-dark">
+                        Explore More
+                        <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </button>
+                </div>
+                <div class="collection-card text-center d-flex flex-column align-items-center justify-content-between">
+                    <h4 class="second-font">SPORTS COLLECTIONS</h4>
+                    <button class="d-flex align-items-center border border-dark">
+                        Explore More
+                        <i class="fa-solid fa-arrow-right ms-1"></i>
+                    </button>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Collections ========== -->
+
+    <!-- ========== Start Bestsellers ========== -->
+    <section class="bestseller" id="products" data-section="products">
+        <div class="container">
+            <h2 class="section-head second-font text-center">Bestsellers Products</h2>
+            <ul class="type-list list-unstyled def-flex flex-wrap">
+                <li class="active">All</li>
+                <li>Nike</li>
+                <li>Adidas</li>
+                <li>Puma</li>
+                <li>Bata</li>
+                <li>Apex</li>
+            </ul>
+            <div class="product-list">
+                <div class="product-item position-relative" data-type="nike" data-src="assets/Imgs/product-1.jpg" data-name="Running Snaker Shoes" data-price="$190.85">
+                    <div class="card-banner">
+                        <img src="assets/Imgs/product-1.jpg" alt="">
+                        <div class="new position-absolute text-white main-bg">New</div>
+                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-data text-center">
+                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                        <div class="type second-font fw-bold m-0 py-1">Running Snaker Shoes</div>
+                        <div class="price fw-semibold m-0">$190.85</div>
+                    </div>
+                </div>
+                <div class="product-item position-relative" data-type="adidas" data-src="assets/Imgs/product-2.jpg" data-name="Leather Mens Slipper" data-price="$170.85">
+                    <div class="card-banner g-danger">
+                        <img src="assets/Imgs/product-2.jpg" alt="">
+                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-data text-center">
+                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                        <div class="type second-font fw-bold m-0 py-1">Leather Mens Slipper</div>
+                        <div class="price fw-semibold m-0">$170.85</div>
+                    </div>
+                </div>
+                <div class="product-item position-relative" data-type="bata" data-src="assets/Imgs/product-3.jpg" data-name="Simole Fabric Shoe" data-price="$120.85">
+                    <div class="card-banner g-danger">
+                        <img src="assets/Imgs/product-3.jpg" alt="">
+                        <div class="new position-absolute text-white main-bg">New</div>
+                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-data text-center">
+                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                        <div class="type second-font fw-bold m-0 py-1">Simole Fabric Shoe</div>
+                        <div class="price fw-semibold m-0">$120.85</div>
+                    </div>
+                </div>
+                <div class="product-item position-relative" data-type="nike" data-src="assets/Imgs/product-4.jpg" data-name="Air Jordan 7 Retro" data-price="$100.85">
+                    <div class="card-banner g-danger">
+                        <img src="assets/Imgs/product-4.jpg" alt="">
+                        <div class="new position-absolute text-white main-bg">-25%</div>
+                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-data text-center">
+                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                        <div class="type second-font fw-bold m-0 py-1">Air Jordan 7 Retro</div>
+                        <div class="price fw-semibold m-0">$100.85</div>
+                    </div>
+                </div>
+                <div class="product-item position-relative" data-type="apex" data-src="assets/Imgs/product-5.jpg" data-name="Nike Air Max 270 SE" data-price="$279.50">
+                    <div class="card-banner g-danger">
+                        <img src="assets/Imgs/product-5.jpg" alt="">
+                        <div class="new position-absolute text-white main-bg">New</div>
+                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-data text-center">
+                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                        <div class="type second-font fw-bold m-0 py-1">Nike Air Max 270 SE</div>
+                        <div class="price fw-semibold m-0">$279.50</div>
+                    </div>
+                </div>
+                <div class="product-item position-relative" data-type="puma" data-src="assets/Imgs/product-6.jpg" data-name="Addidas Sneakers Shoes" data-price="$130">
+                    <div class="card-banner g-danger">
+                        <img src="assets/Imgs/product-6.jpg" alt="">
+                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-data text-center">
+                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                        <div class="type second-font fw-bold m-0 py-1">Addidas Sneakers Shoes</div>
+                        <div class="price fw-semibold m-0">$130</div>
+                    </div>
+                </div>
+                <div class="product-item position-relative" data-type="apex" data-src="assets/Imgs/product-7.jpg" data-name="Nike Basketball Shoes" data-price="$200">
+                    <div class="card-banner g-danger">
+                        <img src="assets/Imgs/product-7.jpg" alt="">
+                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-data text-center">
+                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                        <div class="type second-font fw-bold m-0 py-1">Nike Basketball Shoes</div>
+                        <div class="price fw-semibold m-0">$200</div>
+                    </div>
+                </div>
+                <div class="product-item position-relative" data-type="puma" data-src="assets/Imgs/product-8.jpg" data-name="Simple Fabric Shoe" data-price="$160.50">
+                    <div class="card-banner g-danger">
+                        <img src="assets/Imgs/product-8.jpg" alt="">
+                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                        </ul>
+                    </div>
+                    <div class="product-data text-center">
+                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                        <div class="type second-font fw-bold m-0 py-1">Simple Fabric Shoe</div>
+                        <div class="price fw-semibold m-0">$160.50</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Bestsellers ========== -->
+
+    <!-- ========== Start Offers ========== -->
+    <section class="offers" id="offers">
+        <div class="container">
+            <div class="cards d-flex flex-column flex-lg-row align-items-center justify-content-center column-gap-4 row-gap-3">
+                <div class="card-one position-relative">
+                    <div class="overlay position-absolute start-0 top-0 w-100 h-100"></div>
+                    <img src="assets/Imgs/cta-1.jpg" alt="cta-1" class="img-fluid">
+                    <div class="data position-absolute text-white">
+                        <div class="second-font">Adidas Shoes</div>
+                        <div class="second-font fw-bold d-flex flex-sm-column">
+                            <span>The Summer Sale</span>
+                            <span class="ms-2 ms-sm-0">Off 50%</span>
+                        </div>
+                        <button class="bg-transparent text-white d-flex align-items-center mt-2">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right ms-2"></i>    
+                        </button>
+                    </div>
+                </div>
+                <div class="card-two position-relative">
+                    <div class="overlay position-absolute start-0 top-0 w-100 h-100"></div>
+                    <img src="assets/Imgs/cta-2.jpg" alt="cta-2" class="img-fluid">
+                    <div class="data position-absolute text-white">
+                        <div class="second-font">Nike Shoes</div>
+                        <div class="second-font fw-bold d-flex flex-sm-column">
+                            <span>Makes Yourself</span>
+                            <span class="ms-2 ms-sm-0">Keep Sporty</span>
+                        </div>
+                        <button class="bg-transparent text-white d-flex align-items-center mt-2">
+                            Shop Now
+                            <i class="fa-solid fa-arrow-right ms-2"></i>    
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Offers ========== -->
+
+    <!-- ========== Start Special ========== -->
+    <section class="special" id="special" data-section="special">
+        <div class="container">
+            <div class="row align-items-center justify-content-center">
+                <div class="special-img col-12 col-md-6 col-lg-4 col-xl-3 position-relative">
+                    <img src="assets/Imgs/special-banner.jpg" alt="trend-img">
+                    <div class="overlay position-absolute start-0 top-0 w-100 h-100"></div>
+                </div>
+                <div class="special-product col-12 col-md-6 col-lg-7 col-xl-8">
+                    <div class="head d-flex justify-content-center align-items-center mb-3">
+                        <h2 class="second-font fw-bold m-0 me-2">Nike Special</h2>
+                        <div class="line"></div>
+                    </div>
+                    <div class="swiper new-swiper special-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="product-item position-relative" data-type="nike">
+                                    <div class="card-banner g-danger">
+                                        <img src="assets/Imgs/product-1.jpg" alt="">
+                                        <div class="new position-absolute text-white main-bg">New</div>
+                                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-data text-center">
+                                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                                        <div class="type second-font fw-bold m-0 py-1">Running Snaker Shoes</div>
+                                        <div class="price fw-semibold m-0">$190.85</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-item position-relative" data-type="nike">
+                                    <div class="card-banner g-danger">
+                                        <img src="assets/Imgs/product-4.jpg" alt="">
+                                        <div class="new position-absolute text-white main-bg">New</div>
+                                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-data text-center">
+                                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                                        <div class="type second-font fw-bold m-0 py-1">Running Snaker Shoes</div>
+                                        <div class="price fw-semibold m-0">$190.85</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-item position-relative" data-type="nike">
+                                    <div class="card-banner g-danger">
+                                        <img src="assets/Imgs/product-2.jpg" alt="">
+                                        <div class="new position-absolute text-white main-bg">New</div>
+                                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-data text-center">
+                                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                                        <div class="type second-font fw-bold m-0 py-1">Running Snaker Shoes</div>
+                                        <div class="price fw-semibold m-0">$190.85</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-item position-relative" data-type="nike">
+                                    <div class="card-banner g-danger">
+                                        <img src="assets/Imgs/product-3.jpg" alt="">
+                                        <div class="new position-absolute text-white main-bg">New</div>
+                                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-data text-center">
+                                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                                        <div class="type second-font fw-bold m-0 py-1">Running Snaker Shoes</div>
+                                        <div class="price fw-semibold m-0">$190.85</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-item position-relative" data-type="nike">
+                                    <div class="card-banner g-danger">
+                                        <img src="assets/Imgs/product-8.jpg" alt="">
+                                        <div class="new position-absolute text-white main-bg">New</div>
+                                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-data text-center">
+                                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                                        <div class="type second-font fw-bold m-0 py-1">Running Snaker Shoes</div>
+                                        <div class="price fw-semibold m-0">$190.85</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="product-item position-relative" data-type="nike">
+                                    <div class="card-banner g-danger">
+                                        <img src="assets/Imgs/product-6.jpg" alt="">
+                                        <div class="new position-absolute text-white main-bg">New</div>
+                                        <ul class="cart-action-list list-unstyled d-flex flex-column align-items-center position-absolute">
+                                            <li class="def-flex"><i class="fa-solid fa-cart-plus"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-heart"></i></li>
+                                            <li class="def-flex"><i class="fa-regular fa-eye"></i></li>
+                                            <li class="def-flex"><i class="fa-solid fa-code-compare"></i></li>
+                                        </ul>
+                                    </div>
+                                    <div class="product-data text-center">
+                                        <div class="category m-0"><span>Men</span> / <span>Sports</span></div>
+                                        <div class="type second-font fw-bold m-0 py-1">Running Snaker Shoes</div>
+                                        <div class="price fw-semibold m-0">$190.85</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Special ========== -->
+
+    <!-- ========== Start Services ========== -->
+    <section class="services">
+        <div class="container">
+            <ul class="list-unstyled d-flex flex-wrap justify-content-center">
+                <li>
+                    <div class="serv d-flex align-items-center">
+                        <div class="icon main-bg text-white def-flex me-2"><i class="fa-solid fa-truck-fast"></i></div>
+                        <div class="data">
+                            <div class="second-font fw-bold mb-1">FREE SHIPING</div>
+                            <div>All orders over <span>$150</span></div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="serv d-flex align-items-center">
+                        <div class="icon main-bg text-white def-flex me-2"><i class="fa-solid fa-money-check-dollar"></i></div>
+                        <div class="data">
+                            <div class="second-font fw-bold mb-1">QUICK PAYMENT</div>
+                            <div>100% secure payment</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="serv d-flex align-items-center">
+                        <div class="icon main-bg text-white def-flex me-2"><i class="fa-solid fa-boxes-stacked"></i></div>
+                        <div class="data">
+                            <div class="second-font fw-bold mb-1">FREE RETURNS</div>
+                            <div>Money back in 30 days</div>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="serv d-flex align-items-center">
+                        <div class="icon main-bg text-white def-flex me-2"><i class="fa-solid fa-headset"></i></div>
+                        <div class="data">
+                            <div class="second-font fw-bold mb-1">24/7 SUPPORT</div>
+                            <div>Get Quick Support</div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- ========== End Services ========== -->
+
+    <!-- ========== Start Instgram Links ========== -->
+    <section class="insta-links" id="blog" data-section="blog">
+        <div class="swiper new-swiper insta-swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide position-relative">
+                    <img src="assets/Imgs/insta-1.jpg" alt="instagram-link-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Imgs/insta-2.jpg" alt="instagram-link-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Imgs/insta-3.jpg" alt="instagram-link-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Imgs/insta-4.jpg" alt="instagram-link-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Imgs/insta-5.jpg" alt="instagram-link-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Imgs/insta-6.jpg" alt="instagram-link-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Imgs/insta-7.jpg" alt="instagram-link-img" class="img-fluid">
+                </div>
+                <div class="swiper-slide">
+                    <img src="assets/Imgs/insta-8.jpg" alt="instagram-link-img" class="img-fluid">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Instgram Links ========== -->
+
+    <!-- ========== Start Footer ========== -->
+    <section class="footer" id="contact">
+        <div class="container">
+            <div class="footer-head d-flex flex-column flex-sm-row justify-content-between">
+                <img src="assets/Imgs/logo.svg" width="160" alt="logo-img">
+                <ul class="list-unstyled d-flex align-items-center m-0 mt-3 mt-sm-0">
+                    <li class="me-2 fw-medium def-flex"><i class="fa-brands fa-facebook"></i></li>
+                    <li class="me-2 fw-medium def-flex"><i class="fa-brands fa-instagram"></i></li>
+                    <li class="me-2 fw-medium def-flex"><i class="fa-brands fa-pinterest"></i></li>
+                    <li class="me-2 fw-medium def-flex"><i class="fa-brands fa-linkedin"></i></li>
+                </ul>
+            </div>
+            <div class="content-footer">
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4">
+                    <div class="col">
+                        <div class="col-data">
+                            <div class="head second-font">Contact Us</div>
+                            <ul class="list-unstyled d-flex flex-column">
+                                <li class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-location-dot"></i>
+                                    </div>
+                                    <div>2751 S Parker Rd, Aurora, CO 80014, United States</div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-phone"></i>
+                                    </div>
+                                    <div>+557343673257</div>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-envelope"></i>
+                                    </div>
+                                    <div>footcap@help.com</div>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-data">
+                            <div class="head second-font">My Account</div>
+                            <ul class="list-unstyled d-flex flex-column">
+                                <li class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    My Account
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    View Cart
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    Wishlist
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    Compare
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <div class="icon">
+                                        <i class="fa-solid fa-angle-right"></i>
+                                    </div>
+                                    New Products
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-data">
+                            <div class="head second-font">Openinng Time</div>
+                            <ul class="list-unstyled">
+                                <li class="d-flex align-items-center">
+                                    <span>Mon-Tue:</span>
+                                    <span>8AM - 10PM</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span>Wed:</span>
+                                    <span>8AM - 7PM</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span>Fri:</span>
+                                    <span>7AM - 12PM</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span>Sat:</span>
+                                    <span>9AM - 8PM</span>
+                                </li>
+                                <li class="d-flex align-items-center">
+                                    <span>Sun:</span>
+                                    <span>Closed</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="col-data">
+                            <div class="head second-font">Newsletter</div>
+                            <p>Authoritatively morph 24/7 potentialities with error-free partnerships.</p>
+                            <div class="input d-flex">
+                                <input type="text" placeholder="Email Address" class="border border-0 bg-white">
+                                <button class="main-bg text-white border border-0">Subscribe</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ========== End Footer ========== -->
+
+    <!-- ========== Go To Up ========== -->
+    <div class="up position-fixed def-flex main-bg text-white z-3">
+        <i class="fa-solid fa-arrow-up"></i>
+    </div>
+    <!-- ========== Go To Up ========== -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+    <script src="assets/JS/bootstrap.bundle.min.js"></script>
+    <script src="assets/JS/main.js"></script>
+</body>
+</html>

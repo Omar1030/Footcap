@@ -1,0 +1,23 @@
+<!-- Product In Cart menu -->
+
+<!-- <div class="product">
+    <div class="product-img">
+        <img src="assets/Imgs/product-1.jpg" alt="product-img">
+    </div>
+    <div class="product-data">
+    <div class="info">
+        <div class="name">Running Sneaker Shoes</div>
+        <div class="price">$180</div>
+    </div>
+    <div class="num-items">
+        <div>
+            <span>+</span>
+            <span>1</span>
+            <span>-</span>
+        </div>
+        <div class="del">
+            <i class="fa-regular fa-user"></i>
+        </div>
+    </div>
+</div>
+</div> -->
